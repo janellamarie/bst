@@ -2,21 +2,25 @@
     {
         "id": "general",
         "text": "general",
-        "path": "/"
+        "path": "/",
+        "icon": "info"
     },
     {
         "id": "trades",
         "text": "trades",
-        "path": "/trades"
+        "path": "/trades",
+        "icon": "change_circle"
     },
     {
         "id": "sales",
         "text": "sales",
-        "path": "/sales"
+        "path": "/sales",
+        "icon": "add_shopping_cart"
     },
     {
         "id": "go",
         "text": "group orders",
-        "path": "/go"
+        "path": "/go",
+        "icon": "groups_2"
     }
 ]

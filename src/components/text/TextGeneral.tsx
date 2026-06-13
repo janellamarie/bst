@@ -2,7 +2,7 @@ const TextGeneral = () => {
   return (
     <ul className="list">
       <li className="list-item">
-        <span className="black colored">usa only</span> (trades, sales, and gos)
+        <span className="heavy colored">usa only</span> (trades, sales, and gos)
       </li>
       <li className="list-item">
         any <span className="italic bold">sale</span> offers on non-high
@@ -11,10 +11,9 @@ const TextGeneral = () => {
       </li>
       <li className="list-item">
         <span className="highlighted">
-          i am <span className="black">NOT</span> responsible for lost or
+          i am <span className="heavy">NOT</span> responsible for lost or
           damaged mail once sent out
         </span>
-        .
       </li>
       <li className="list-item">
         for trades and sales, i provide:

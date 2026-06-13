@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { useNavigate } from "react-router";
 import { useLayoutEffect, useState } from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { AnimatePresence, motion } from "motion/react";
 
 const TopNavigation = () => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const TopNavigation = () => {
               dehaze
             </span>
           )}
-          <span className="top-nav-heading">navigation</span>
+          <span className="top-nav-heading bold">navigation</span>
         </div>
 
         <div className="socials-container">
@@ -51,27 +52,39 @@ const TopNavigation = () => {
         </div>
       </div>
 
-      {expanded && (
-        <div className="top-navigation-expanded-container">
-          {paths.map((p) => {
-            const itemClass = classNames({
-              "navigation-item": true,
-              selected: selectedNavItem === p.id,
-              bold: selectedNavItem === p.id,
-            });
+      <AnimatePresence>
+        {expanded && (
+          <motion.div
+            className="top-navigation-expanded-container"
+            initial={{ opacity: 0, translateX: -20 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            exit={{ opacity: 0, translateX: -20 }}
+          >
+            {paths.map((p) => {
+              const itemClass = classNames({
+                "navigation-item": true,
+                selected: selectedNavItem === p.id,
+                bold: selectedNavItem === p.id,
+              });
 
-            return (
-              <div
-                className={itemClass}
-                onClick={() => handleNavItemClick(p.id, p.path)}
-                onTouchEnd={() => handleNavItemClick(p.id, p.path)}
-              >
-                <span className="navigation-item-text">{p.text}</span>
-              </div>
-            );
-          })}
-        </div>
-      )}
+              return (
+                <div
+                  className={itemClass}
+                  onClick={() => handleNavItemClick(p.id, p.path)}
+                  onTouchEnd={() => handleNavItemClick(p.id, p.path)}
+                >
+                  {p.icon && (
+                    <span className="material-symbols-outlined navigation-item-icon">
+                      {p.icon}
+                    </span>
+                  )}
+                  <span className="navigation-item-text">{p.text}</span>
+                </div>
+              );
+            })}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {expanded && (
         <div

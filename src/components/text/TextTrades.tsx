@@ -18,10 +18,14 @@ const TextTrades = () => {
         <span className="gray">)</span>
       </li>
       <li className="list-item">
+        i expect a video of the item under direct light or your flash on and
+        packaging + address confirmation for all trades
+      </li>
+      <li className="list-item">
         if you have{" "}
         <span className="colored">less than 10 recent clickable proofs</span>, i
         might ask you to send out first. once i've received your mail, i'll send
-        out as i'm able to.
+        out as i'm able to
       </li>
       <li>
         <span className="highlighted bold">
