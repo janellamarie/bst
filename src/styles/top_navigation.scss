@@ -67,43 +67,25 @@
 
     cursor: pointer;
 
-    transition: color 0.2s ease-in-out;
+    transition:
+      color 0.2s ease-in-out,
+      border-left 0.2s ease-in-out;
+
+    border-left: 2px solid transparent;
 
     &:hover {
       color: $cerulean;
-
-      &::after {
-        content: "";
-        top: 90%;
-        left: 0;
-        margin: 0 10px;
-        width: 97%;
-        height: 1px;
-        position: absolute;
-
-        background-color: $cerulean;
-      }
     }
 
     &:active {
       color: $oxford-navy;
+      border-left: 2px solid $oxford-navy;
     }
   }
 
   .selected {
     color: $punch-red;
-
-    &::after {
-      content: "";
-      top: 90%;
-      left: 0;
-      margin: 0 10px;
-      width: 97%;
-      height: 1px;
-      position: absolute;
-
-      background-color: $punch-red;
-    }
+    border-left: 2px solid $punch-red;
 
     &:hover {
       color: $cerulean;
