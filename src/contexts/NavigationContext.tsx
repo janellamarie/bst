@@ -3,7 +3,11 @@ import { useLocation } from "react-router";
 
 export const NavigationContext = createContext({});
 
-export const NavigationContextProvider = ({ children }) => {
+export const NavigationContextProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   const [selectedNavItem, setSelectedNavItem] = useState<string>("general");
 
   const location = useLocation();
