@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba($white-smoke, 0.5);
   backdrop-filter: blur(30px);
 }
 
@@ -23,7 +23,7 @@
   width: 30%;
 
   top: $top-nav-height;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba($white-smoke, 0.5);
   backdrop-filter: blur(30px);
   .navigation-item {
     padding: 16px;
