@@ -1,9 +1,9 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router";
 
-export const HeaderContext = createContext({});
+export const NavigationContext = createContext({});
 
-export const HeaderContextProvider = ({ children }) => {
+export const NavigationContextProvider = ({ children }) => {
   const [selectedNavItem, setSelectedNavItem] = useState<string>("general");
 
   const location = useLocation();
@@ -18,10 +18,10 @@ export const HeaderContextProvider = ({ children }) => {
   }, [location]);
 
   return (
-    <HeaderContext.Provider value={{ selectedNavItem, setSelectedNavItem }}>
+    <NavigationContext.Provider value={{ selectedNavItem, setSelectedNavItem }}>
       {children}
-    </HeaderContext.Provider>
+    </NavigationContext.Provider>
   );
 };
 
-export const useHeaderContext = () => useContext<any>(HeaderContext);
+export const useNavigationContext = () => useContext<any>(NavigationContext);

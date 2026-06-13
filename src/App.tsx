@@ -3,10 +3,12 @@ import "./App.scss";
 import Header from "./components/Header";
 import General from "./pages/General";
 import Trades from "./pages/Trades";
+import TopNavigation from "./components/common/TopNavigation";
 
 function App() {
   return (
     <>
+      <TopNavigation />
       <Header />
       <Routes>
         <Route path="/" element={<General />} />

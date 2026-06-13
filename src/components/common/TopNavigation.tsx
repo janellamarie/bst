@@ -1,0 +1,67 @@
+import { useNavigationContext } from "../../contexts/NavigationContext";
+import paths from "../../assets/json/paths.json";
+import classNames from "classnames";
+import { useNavigate } from "react-router";
+import { useLayoutEffect, useState } from "react";
+
+const TopNavigation = () => {
+  const navigate = useNavigate();
+
+  const { selectedNavItem, setSelectedNavItem } = useNavigationContext();
+
+  const [expanded, setExpanded] = useState(false);
+
+  const handleNavItemClick = (id: string, path: string) => {
+    console.warn("navigating to...", path);
+    setSelectedNavItem(id);
+    navigate(path);
+  };
+
+  useLayoutEffect(() => {
+    setExpanded(false);
+  }, [selectedNavItem]);
+
+  return (
+    <>
+      <div className="top-navigation-container">
+        <div
+          className="hamburger-menu-container"
+          onClick={() => setExpanded((prev) => !prev)}
+        >
+          {expanded ? (
+            <span className="material-symbols-outlined clickable-icon">
+              close
+            </span>
+          ) : (
+            <span className="material-symbols-outlined clickable-icon">
+              dehaze
+            </span>
+          )}
+        </div>
+      </div>
+      {expanded && (
+        <div className="top-navigation-expanded-container">
+          {paths.map((p) => {
+            const itemClass = classNames({
+              "navigation-item": true,
+              selected: selectedNavItem === p.id,
+              bold: selectedNavItem === p.id,
+            });
+
+            return (
+              <div
+                className={itemClass}
+                onClick={() => handleNavItemClick(p.id, p.path)}
+                onTouchEnd={() => handleNavItemClick(p.id, p.path)}
+              >
+                <span className="navigation-item-text">{p.text}</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </>
+  );
+};
+
+export default TopNavigation;

@@ -1,4 +1,3 @@
-import HeaderNavigation from "./common/HeaderNavigation";
 import info from "./../assets/json/header_info.json";
 
 const Header = () => {
@@ -24,7 +23,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <HeaderNavigation />
     </>
   );
 };
