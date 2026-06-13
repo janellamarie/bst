@@ -1,0 +1,10 @@
+@import "./styles/variables.scss";
+@import "./styles/common.scss";
+@import "./styles/header.scss";
+
+:root {
+  font-size: $font-size-small;
+  font-family: "Nunito Sans";
+
+  margin: 0 auto;
+}

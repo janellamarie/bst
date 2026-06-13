@@ -1,0 +1,22 @@
+[
+    {
+        "id": "general",
+        "text": "general",
+        "path": "/"
+    },
+    {
+        "id": "trades",
+        "text": "trades",
+        "path": "/trades"
+    },
+    {
+        "id": "sales",
+        "text": "sales",
+        "path": "/sales"
+    },
+    {
+        "id": "go",
+        "text": "group orders",
+        "path": "/go"
+    }
+]

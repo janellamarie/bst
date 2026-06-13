@@ -1,0 +1,53 @@
+.heading {
+  font-size: $font-size-large;
+  text-align: left;
+  font-weight: 700;
+}
+
+.col-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+ul {
+  text-align: left;
+  padding: 0 24px;
+}
+
+li {
+  padding: 2px 0;
+}
+
+.highlighted {
+  background-color: $blushed-brick;
+  padding: 0 2px;
+  color: white;
+}
+
+.colored {
+  color: $punch-red;
+}
+
+.gray {
+  color: $grey;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.sub-note {
+  padding: 0 2px;
+}
