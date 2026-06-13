@@ -4,6 +4,6 @@ import babel from "@rolldown/plugin-babel";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/bst/",
+  base: "/bst",
   plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
 });

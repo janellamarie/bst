@@ -56,10 +56,4 @@ li {
   cursor: pointer;
 
   transition: color 0.2s ease-in-out;
-
-  &:hover,
-  :active {
-    color: white;
-    transition: color 0.2s ease-in-out;
-  }
 }

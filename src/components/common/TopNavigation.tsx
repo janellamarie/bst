@@ -3,6 +3,7 @@ import paths from "../../assets/json/paths.json";
 import classNames from "classnames";
 import { useNavigate } from "react-router";
 import { useLayoutEffect, useState } from "react";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const TopNavigation = () => {
   const navigate = useNavigate();
@@ -37,8 +38,19 @@ const TopNavigation = () => {
               dehaze
             </span>
           )}
+          <span className="top-nav-heading">navigation</span>
+        </div>
+
+        <div className="socials-container">
+          <InstagramIcon
+            className="clickable-icon"
+            onClick={() =>
+              window.open("https://www.instagram.com/innielinokun/", "_blank")
+            }
+          />
         </div>
       </div>
+
       {expanded && (
         <div className="top-navigation-expanded-container">
           {paths.map((p) => {
@@ -59,6 +71,14 @@ const TopNavigation = () => {
             );
           })}
         </div>
+      )}
+
+      {expanded && (
+        <div
+          className="top-navigation-backdrop"
+          onClick={() => setExpanded(false)}
+          onTouchEnd={() => setExpanded(false)}
+        ></div>
       )}
     </>
   );
