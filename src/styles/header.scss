@@ -5,7 +5,11 @@
   align-items: center;
 
   gap: 16px;
-  padding: calc($top-nav-height + 5px) 0 16px 0;
+  margin: calc($top-nav-height + 5px) 0 16px;
+  padding: 7px;
+
+  border: 1px solid $punch-red;
+  border-radius: $border-radius-xs;
 
   #header-wrapper {
     gap: 1px;
@@ -25,7 +29,7 @@
   .profile-icon {
     height: 7em;
     width: 7em;
-    border-radius: $border-radius-default;
+    border-radius: $border-radius-xs;
   }
 }
 

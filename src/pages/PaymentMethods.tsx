@@ -19,12 +19,14 @@ const PaymentMethods = () => {
       </div>
       <ul>
         <li className="list-item">
-          you will be given emoji(s) to send as a note with your payment
+          <span className="colored">for paypal</span>: only send through{" "}
+          <span className="bold colored">friends and family</span>
         </li>
         <li className="list-item">
           <span className="bold">
             please do NOT write your username or the items you're paying for on
-            the payment note
+            the payment note; you will be given instructions on what emoji to
+            put as your payment note
           </span>
         </li>
         <li className="list-item">

@@ -44,13 +44,13 @@ const TopNavigation = () => {
         </div>
 
         <div className="socials-container">
-          <motion.div whileTap={{ scale: 0.9 }}>
+          <motion.div whileTap={{ scale: 0.9 }} whileHover={{ scale: 0.9 }}>
             <TwitterIcon
               className="clickable-icon"
               onClick={() => window.open("https://x.com/innierizaki", "_blank")}
             />
           </motion.div>
-          <motion.div whileTap={{ scale: 0.9 }}>
+          <motion.div whileTap={{ scale: 0.9 }} whileHover={{ scale: 0.9 }}>
             <InstagramIcon
               className="clickable-icon"
               onClick={() =>

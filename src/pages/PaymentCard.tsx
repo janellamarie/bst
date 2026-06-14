@@ -13,6 +13,7 @@ const PaymentCard = ({ name, description, link, icon }: PaymentCardProps) => {
       className="payment-card-container"
       onClick={() => window.open(link, "_blank")}
       whileTap={{ scale: 0.9 }}
+      whileHover={{ scale: 0.9 }}
     >
       {icon && <img className="payment-card-icon" src={icon} />}
       <span className="payment-method-name">{name}</span>
