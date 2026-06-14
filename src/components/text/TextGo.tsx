@@ -18,7 +18,7 @@ const TextGo = () => {
         i will try to give updates whenever i can
       </li>
       <li className="list-item">
-        <span className="highlighted">
+        <span className="bold colored">
           no backouts without replacement once you've claimed
         </span>
       </li>
@@ -74,9 +74,9 @@ const TextGo = () => {
         hosting a set or items from a scammer, please inform me immediately
       </li>
       <li className="list-item">
-        <span className="bold">
+        <span className="heavy highlighted">
           by claiming a spot in my group orders, i will assume you agree to and
-          have ready everything in general + group order info
+          have read everything in general + group order info
         </span>
       </li>
     </ul>

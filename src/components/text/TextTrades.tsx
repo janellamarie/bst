@@ -34,8 +34,8 @@ const TextTrades = () => {
       </li>
       <li>
         <span className="bold">
-          please add ✨ emoji anywhere in your dm if you're interested in
-          trading so i know you've through my trading info
+          please add a ✨ emoji anywhere in your dm if you're interested in
+          trading so i know you've read through my trading info
         </span>
       </li>
     </ul>

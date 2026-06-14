@@ -20,7 +20,7 @@ const Header = () => {
                       {item.iconName}
                     </span>
                   )}
-                  <span>{item.text}</span>
+                  <span className="medium">{item.text}</span>
                 </div>
               );
             })}

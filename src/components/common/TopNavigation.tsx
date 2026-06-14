@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { useNavigate } from "react-router";
 import { useLayoutEffect, useState } from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import { AnimatePresence, motion } from "motion/react";
 
 const TopNavigation = () => {
@@ -43,6 +44,12 @@ const TopNavigation = () => {
         </div>
 
         <div className="socials-container">
+          <motion.div whileTap={{ scale: 0.9 }}>
+            <TwitterIcon
+              className="clickable-icon"
+              onClick={() => window.open("https://x.com/innierizaki", "_blank")}
+            />
+          </motion.div>
           <motion.div whileTap={{ scale: 0.9 }}>
             <InstagramIcon
               className="clickable-icon"

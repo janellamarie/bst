@@ -7,7 +7,7 @@ const TextGeneral = () => {
       <li className="list-item">
         any <span className="italic bold">sale</span> offers on non-high
         priority items will be ignored (currently working on getting wls
-        updated).
+        updated)
       </li>
       <li className="list-item">
         <span className="highlighted">
@@ -16,7 +16,7 @@ const TextGeneral = () => {
         </span>
       </li>
       <li className="list-item">
-        for trades and sales, i provide:
+        for both trades and sales, i provide:
         <ul className="sub-list">
           <li>video of the item under direct light or with my flash on</li>
           <li>packaging + address confirmation</li>
@@ -28,9 +28,10 @@ const TextGeneral = () => {
         trading
       </li>
       <li className="list-item">
-        i usually use a <span className="bold">locked apartment mailbox </span>
+        i usually use a{" "}
+        <span className="heavy colored">locked apartment mailbox </span>
         to send out. however, i may use a
-        <span className="colored">
+        <span className="medium colored">
           {" "}
           personal home mailbox during the holidays
         </span>
@@ -47,13 +48,12 @@ const TextGeneral = () => {
         <span className="colored">
           please do not transact with me if you are allergic
         </span>
-        .
       </li>
       <li className="list-item">
         for bulk send outs, your envelope will be assigned a number
       </li>
       <li className="list-item medium">
-        my username on your envelope is OK. i don't write usernames on envelopes
+        my username on your envelope is OK; i don't write usernames on envelopes
       </li>
       <li className="list-item">
         sends out will be done either in the morning, or in the afternoon after
@@ -84,6 +84,10 @@ const TextGeneral = () => {
           regardless if you have the designated emoji or not
         </span>
         <span className="gray">)</span>
+      </li>
+      <li>
+        if you're unable to dm me on my main instagram, my back-up instagram,{" "}
+        <span className="colored">@raichu_ayen</span> is linked in my profile
       </li>
     </ul>
   );
