@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-  padding: 10px;
-  background-color: $vanilla-cream;
+  padding: 5px 20px;
   align-items: center;
-  border-radius: $border-radius-small;
+  border: 2px solid $punch-red;
+  border-radius: $border-radius-xs;
 
   .payment-card-icon {
     height: 1rem;
@@ -13,8 +13,8 @@
   }
 
   .payment-method-name {
-    font-family: $fjalla-one;
-    letter-spacing: 5%;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
   }
 }
 

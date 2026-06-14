@@ -24,7 +24,7 @@
         "icon": "groups_2"
     },
     {
-        "id": "payment",
+        "id": "payments",
         "text": "payment methods",
         "path": "/payments",
         "icon": "send_money"

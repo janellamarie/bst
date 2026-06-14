@@ -43,12 +43,14 @@ const TopNavigation = () => {
         </div>
 
         <div className="socials-container">
-          <InstagramIcon
-            className="clickable-icon"
-            onClick={() =>
-              window.open("https://www.instagram.com/innielinokun/", "_blank")
-            }
-          />
+          <motion.div whileTap={{ scale: 0.9 }}>
+            <InstagramIcon
+              className="clickable-icon"
+              onClick={() =>
+                window.open("https://www.instagram.com/innielinokun/", "_blank")
+              }
+            />
+          </motion.div>
         </div>
       </div>
 

@@ -5,13 +5,20 @@
   align-items: center;
 
   gap: 16px;
-  padding: calc($top-nav-height + 16px) 16px 16px 16px;
+  padding: calc($top-nav-height + 16px) 0 16px 0;
 
   #header-wrapper {
     gap: 1px;
 
     .sub-heading-item {
       display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .header-info-icon {
+        color: $cerulean;
+        font-size: $font-size-small;
+      }
     }
   }
 

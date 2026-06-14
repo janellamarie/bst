@@ -15,7 +15,11 @@ const Header = () => {
             {info.subHeading.map((item) => {
               return (
                 <div className="sub-heading-item">
-                  <img src={item.iconUrl}></img>
+                  {item.iconName && (
+                    <span className="material-symbols-outlined header-info-icon">
+                      {item.iconName}
+                    </span>
+                  )}
                   <span>{item.text}</span>
                 </div>
               );

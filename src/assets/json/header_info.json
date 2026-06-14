@@ -3,15 +3,15 @@
     "heading": "innielinokun",
     "subHeading": [
         {
-            "iconUrl": "",
+            "iconName": "signature",
             "text": "jan / janella"
         },
         {
-            "iconUrl": "",
+            "iconName": "info",
             "text": "she / her | 1999 | 🇵🇭"
         },
         {
-            "iconUrl": "",
+            "iconName": "location_on",
             "text": "based in FL, USA"
         }
     ]
