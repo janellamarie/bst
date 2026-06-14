@@ -22,5 +22,11 @@
         "text": "group orders",
         "path": "/go",
         "icon": "groups_2"
+    },
+    {
+        "id": "payment",
+        "text": "payment methods",
+        "path": "/payments",
+        "icon": "send_money"
     }
 ]

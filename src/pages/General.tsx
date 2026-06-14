@@ -1,17 +1,12 @@
 import TextGeneral from "../components/text/TextGeneral";
-import text from "./../assets/json/general.json";
+import text from "./../assets/json/page_heading.json";
+import PageWrapper from "./common/PageWrapper";
 
 const General = () => {
   return (
-    <div className="page-container" id="general">
-      <div className="page-heading">
-        <span className="page-heading-text heading">{text.pageHeading}</span>
-      </div>
-
-      <div className="page-content">
-        <TextGeneral />
-      </div>
-    </div>
+    <PageWrapper id="general" heading={text.general}>
+      <TextGeneral />
+    </PageWrapper>
   );
 };
 

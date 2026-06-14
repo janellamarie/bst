@@ -2,6 +2,7 @@
   font-size: $font-size-large;
   text-align: left;
   font-weight: 700;
+  font-family: $fjalla-one;
 }
 
 .col-wrapper {
@@ -31,8 +32,8 @@ li {
 }
 
 .highlighted {
-  background-color: $blushed-brick;
-  padding: 0 2px;
+  background-color: rgba($blushed-brick, 0.9);
+  padding: 0 1px;
   color: white;
 }
 
@@ -64,5 +65,30 @@ li {
   }
   to {
     opacity: 1;
+  }
+}
+
+.page-heading {
+  width: 100%;
+  background-color: $frosted-blue;
+  padding: 5px 0;
+  border-radius: $border-radius-small;
+
+  .page-heading-text {
+    color: $cerulean;
+    letter-spacing: 5%;
+  }
+}
+
+.subheading {
+  width: 100%;
+  padding: 5px 0;
+  border-radius: $border-radius-small;
+
+  .subheading-title-text {
+    color: $cerulean;
+    font-family: $fjalla-one;
+    font-size: $font-size-medium;
+    letter-spacing: 5%;
   }
 }

@@ -1,17 +1,12 @@
 import TextTrades from "../components/text/TextTrades";
-import text from "./../assets/json/trades.json";
+import text from "./../assets/json/page_heading.json";
+import PageWrapper from "./common/PageWrapper";
 
 const Trades = () => {
   return (
-    <div className="page-container" id="trades">
-      <div className="page-heading">
-        <span className="page-heading-text heading">{text.pageHeading}</span>
-      </div>
-
-      <div className="page-content">
-        <TextTrades />
-      </div>
-    </div>
+    <PageWrapper id="trades" heading={text.trades}>
+      <TextTrades />
+    </PageWrapper>
   );
 };
 

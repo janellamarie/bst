@@ -6,6 +6,9 @@
 
   height: $top-nav-height;
 
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
+  clip-path: 0 0 0 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,6 +47,9 @@
 
   background-color: rgba($white-smoke, 1);
 
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  clip-path: inset(0 -10px 0 0);
+
   animation: fadeIn 0.2s ease-in-out;
 
   &::before {
@@ -75,6 +81,8 @@
 
     &:hover {
       color: $cerulean;
+      background-color: rgba($cerulean, 0.1);
+      border-left: 2px solid $oxford-navy;
     }
 
     &:active {
@@ -86,6 +94,7 @@
   .selected {
     color: $punch-red;
     border-left: 2px solid $punch-red;
+    background-color: rgba($blushed-brick, 0.1);
 
     &:hover {
       color: $cerulean;
@@ -104,4 +113,7 @@
   top: 0;
   left: 0;
   z-index: 0;
+  touch-action: none;
+
+  background-color: rgba(0, 0, 0, 0.3);
 }

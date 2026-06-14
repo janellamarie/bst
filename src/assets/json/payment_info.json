@@ -1,0 +1,14 @@
+{
+    "methods": [
+        {
+            "name": "paypal",
+            "link": "https://www.paypal.com/paypalme/janelladotexe",
+            "icon": "images/icons/paypal.svg"
+        },
+        {
+            "name": "venmo",
+            "link": "https://account.venmo.com/u/janelladotexe",
+            "icon": "images/icons/venmo.svg"
+        }
+    ]
+}

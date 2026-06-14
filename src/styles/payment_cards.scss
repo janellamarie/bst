@@ -1,0 +1,35 @@
+.payment-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  background-color: $vanilla-cream;
+  align-items: center;
+  border-radius: $border-radius-small;
+
+  .payment-card-icon {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .payment-method-name {
+    font-family: $fjalla-one;
+    letter-spacing: 5%;
+  }
+}
+
+.payment-methods-list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin: 2rem 0;
+  gap: 30px;
+}
+
+#payments {
+  .col-wrapper {
+    gap: 5px;
+  }
+}

@@ -39,7 +39,7 @@ const TopNavigation = () => {
               dehaze
             </span>
           )}
-          <span className="top-nav-heading bold">navigation</span>
+          <span className="top-nav-heading heading">navigation</span>
         </div>
 
         <div className="socials-container">

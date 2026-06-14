@@ -5,7 +5,7 @@
   align-items: center;
 
   gap: 16px;
-  padding: calc($top-nav-height + 24px) 16px 16px 16px;
+  padding: calc($top-nav-height + 16px) 16px 16px 16px;
 
   #header-wrapper {
     gap: 1px;
@@ -20,4 +20,8 @@
     width: 7em;
     border-radius: $border-radius-default;
   }
+}
+
+#heading-text {
+  color: $punch-red;
 }
