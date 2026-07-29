@@ -1,6 +1,6 @@
 {
     "iconUrl": "images/icon.jpg",
-    "heading": "innielinokun",
+    "heading": "oreo_yeni",
     "subHeading": [
         {
             "iconName": "signature",
@@ -13,6 +13,10 @@
         {
             "iconName": "location_on",
             "text": "based in FL, USA"
+        },
+        {
+            "iconName": "amend",
+            "text": "formerly innielinokun"
         }
     ]
 }
