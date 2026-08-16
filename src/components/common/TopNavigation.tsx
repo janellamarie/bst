@@ -47,14 +47,14 @@ const TopNavigation = () => {
           <motion.div whileTap={{ scale: 0.9 }} whileHover={{ scale: 0.9 }}>
             <TwitterIcon
               className="clickable-icon"
-              onClick={() => window.open("https://x.com/innierizaki", "_blank")}
+              onClick={() => window.open("https://x.com/oreo_yeni", "_blank")}
             />
           </motion.div>
           <motion.div whileTap={{ scale: 0.9 }} whileHover={{ scale: 0.9 }}>
             <InstagramIcon
               className="clickable-icon"
               onClick={() =>
-                window.open("https://www.instagram.com/innielinokun/", "_blank")
+                window.open("https://www.instagram.com/oreo_yeni/", "_blank")
               }
             />
           </motion.div>

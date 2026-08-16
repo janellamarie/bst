@@ -53,7 +53,7 @@ const TextGeneral = () => {
         for bulk send outs, your envelope will be assigned a number
       </li>
       <li className="list-item medium">
-        my username on your envelope is OK; i don't write usernames on envelopes
+        my username on your envelope is ok; i don't write usernames on envelopes
       </li>
       <li className="list-item">
         sends out will be done either in the morning, or in the afternoon after
@@ -64,6 +64,16 @@ const TextGeneral = () => {
           next day
         </span>
         <span className="gray">)</span>.
+      </li>
+      <li className="list-item">
+        <span className="bold">freebies are appreciated, but not required</span>
+        . feel free to give me freebies of any member!
+      </li>
+      <li className="list-item">
+        <span className="bold">
+          posts are archived once all items are unavailable
+        </span>
+        (unavailable = items have been sent out and are no longer in my hands)
       </li>
       <li className="list-item">
         <span className="bold">
@@ -87,7 +97,7 @@ const TextGeneral = () => {
       </li>
       <li>
         if you're unable to dm me on my main instagram, my back-up instagram,{" "}
-        <span className="colored">@raichu_ayen</span> is linked in my profile
+        <span className="colored">@innielinokun</span> is linked in my profile
       </li>
     </ul>
   );
