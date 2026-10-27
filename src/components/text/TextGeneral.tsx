@@ -25,7 +25,7 @@ const TextGeneral = () => {
       </li>
       <li className="list-item">
         i will disclose any damages to the item, please do the same if we're
-        trading
+        trading!
       </li>
       <li className="list-item">
         i usually use a{" "}
@@ -35,36 +35,42 @@ const TextGeneral = () => {
           {" "}
           personal home mailbox during the holidays
         </span>
-      </li>
-      <li className="list-item">
-        <span className="bold colored">
-          if you are not comfortable with any of my preferred send out methods,
-          please let me know
-        </span>
-        . i can find time to drop off my through local post office instead
+        <ul className="sub-list">
+          <li>large packages/items will be dropped off at the post office</li>
+          <li>
+            <span className="bold colored">
+              if you are not comfortable with any of my preferred send out
+              methods, please let me know
+            </span>
+            . i can find time to drop off my through local post office instead.
+          </li>
+          <li className="list-item">
+            for bulk send outs, your envelope will be assigned a number
+          </li>
+          <li className="list-item">
+            sends out will be done either in the morning, or in the afternoon
+            after work
+            <span className="gray"> (</span>
+            <span className="italic gray sub-note">
+              any mail dropped off in the afternoon will likely be picked up the
+              next day
+            </span>
+            <span className="gray">)</span>.
+          </li>
+        </ul>
       </li>
       <li className="list-item">
         i live in a dog-friendly home.{" "}
         <span className="colored">
-          please do not transact with me if you are allergic
+          please do not transact with me if you are allergic.
         </span>
       </li>
-      <li className="list-item">
-        for bulk send outs, your envelope will be assigned a number
-      </li>
+
       <li className="list-item medium">
-        my username on your envelope is ok; i don't write usernames on envelopes
+        my username on your envelope is ok; i don't write usernames on
+        envelopes.
       </li>
-      <li className="list-item">
-        sends out will be done either in the morning, or in the afternoon after
-        work
-        <span className="gray"> (</span>
-        <span className="italic gray sub-note">
-          any mail dropped off in the afternoon will likely be picked up the
-          next day
-        </span>
-        <span className="gray">)</span>.
-      </li>
+
       <li className="list-item">
         <span className="bold">freebies are appreciated, but not required</span>
         . feel free to give me freebies of any member!
@@ -72,7 +78,7 @@ const TextGeneral = () => {
       <li className="list-item">
         <span className="bold">
           posts are archived once all items are unavailable
-        </span>
+        </span>{" "}
         (unavailable = items have been sent out and are no longer in my hands)
       </li>
       <li className="list-item">
