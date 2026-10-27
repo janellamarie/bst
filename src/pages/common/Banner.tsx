@@ -1,7 +1,7 @@
-const Banner = ({ text }) => {
+const Banner = ({}) => {
   return (
     <div className="banner">
-      <span className="banner-text">{text}</span>
+      <span className="banner-text">{}</span>
     </div>
   );
 };
