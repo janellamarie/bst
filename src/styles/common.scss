@@ -92,3 +92,31 @@ li {
     letter-spacing: 5%;
   }
 }
+
+.button {
+  background-color: $pastel-petal;
+  border-radius: $border-radius-xs;
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: $font-size-medium;
+  font-family: $fjalla-one;
+  border: $bubblegum-pink solid 1px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-out;
+
+  &:hover,
+  &:active {
+    background-color: $baby-pink;
+    transition: background-color 0.5s ease-out;
+  }
+}
+
+#go {
+  .footer {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
