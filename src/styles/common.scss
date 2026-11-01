@@ -94,19 +94,21 @@ li {
 }
 
 .button {
-  background-color: $pastel-petal;
+  // background-color: $pastel-petal;
   border-radius: $border-radius-xs;
   width: fit-content;
   padding: 10px 20px;
   font-size: $font-size-medium;
   font-family: $fjalla-one;
-  border: $bubblegum-pink solid 1px;
+  border: $punch-red solid 2px;
   cursor: pointer;
+  background-color: none;
   transition: background-color 0.5s ease-out;
 
   &:hover,
-  &:active {
-    background-color: $baby-pink;
+  &:active,
+  &:focus {
+    background-color: $pastel-petal;
     transition: background-color 0.5s ease-out;
   }
 }

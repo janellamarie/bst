@@ -10,10 +10,8 @@ export interface PaymentCardProps {
 const PaymentCard = ({ name, description, link, icon }: PaymentCardProps) => {
   return (
     <motion.div
-      className="payment-card-container"
+      className="payment-card-container button"
       onClick={() => window.open(link, "_blank")}
-      whileTap={{ scale: 0.9 }}
-      whileHover={{ scale: 0.9 }}
     >
       {icon && <img className="payment-card-icon" src={icon} />}
       <span className="payment-method-name">{name}</span>
