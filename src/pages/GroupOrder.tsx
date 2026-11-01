@@ -4,7 +4,7 @@ import text from "../assets/json/page_heading.json";
 import { motion } from "motion/react";
 
 const ML_URL =
-  "https://app.notion.com/p/oreo_yeni-s-Group-Orders-Home-40557e145313807aaafccccee2464111?source=copy_link";
+  "https://gainful-turn-2dc.notion.site/oreo_yeni-s-Group-Orders-Home-40557e145313807aaafccccee2464111";
 
 const GroupOrder = () => {
   return (
